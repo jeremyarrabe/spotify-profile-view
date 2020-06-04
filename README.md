@@ -1,4 +1,4 @@
-# Spotify Web App : Structure
+# Spotify Profile View :fireworks:
 
 A simple website that uses spotify web api.
 

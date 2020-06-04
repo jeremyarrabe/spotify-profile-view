@@ -13,7 +13,7 @@ This was made by [jeremeheh](https://github.com/jeremeheh).
 - Redux Promise Middleware - Handling API call (Async) with \_FULFILLED, \_PENDING.
 - React Router - A routing library for React.
 
-### APIs Well be using
+### APIs used
 
 SPOTIFY WEB API
 

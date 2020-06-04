@@ -1,4 +1,4 @@
-# Spotify Profile View :fireworks:
+# Spotify Profile View :fireworks: :speech_balloon:
 
 A simple website that uses spotify web api.
 

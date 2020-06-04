@@ -1,5 +1,4 @@
 const express = require('express');
-const mongoose = require('mongoose');
 
 const helmet = require('helmet');
 const cors = require('cors');
@@ -12,17 +11,6 @@ const spotify = require('./api/SpotifyAPI/index');
 require('dotenv').config();
 
 const app = express();
-
-mongoose.connect(`${process.env.MONGOOSE_URL}`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error: '));
-db.once('open', () => {
-  console.log('Connected To Mongoose!');
-});
 
 app.use(helmet());
 app.use(morgan('tiny'));

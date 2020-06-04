@@ -31,5 +31,5 @@ app.use(notFound);
 app.use(errorHandler);
 
 app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port} -- jem v2`);
+  console.log(`Listening at http://localhost:${port}`);
 });

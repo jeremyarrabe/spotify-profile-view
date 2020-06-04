@@ -44,7 +44,6 @@ class App extends Component {
         onCheckAuth(obj);
       }
     }
-    console.log('🚀🚀🚀');
   };
 
   render() {

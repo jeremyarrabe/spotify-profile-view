@@ -4,13 +4,12 @@ import { BrowserRouter } from 'react-router-dom';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import promise from 'redux-promise-middleware';
-import { logger } from 'redux-logger';
 
 import './index.scss';
 import App from './pages/App/App';
 import { reducer } from './redux/store';
 
-const store = createStore(reducer, applyMiddleware(logger, promise));
+const store = createStore(reducer, applyMiddleware(promise));
 
 ReactDOM.render(
   <Provider store={store}>
@@ -18,5 +17,5 @@ ReactDOM.render(
       <App />
     </BrowserRouter>
   </Provider>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );

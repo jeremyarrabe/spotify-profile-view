@@ -5,7 +5,6 @@ import NavBtn from '../../common/images/nav.png';
 import './Nav.scss';
 
 const showMobileNav = () => {
-  console.log(1);
   const mobileNav = document.querySelector('.mobileNav');
   if (mobileNav.classList.contains('animate__fadeOutRight')) {
     mobileNav.classList.remove('animate__fadeOutRight');
@@ -18,7 +17,6 @@ const showMobileNav = () => {
 };
 
 const closeMobileNav = () => {
-  console.log(2);
   const mobileNav = document.querySelector('.mobileNav');
 
   if (mobileNav.classList.contains('animate__fadeInRight')) {

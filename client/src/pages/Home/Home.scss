@@ -1,0 +1,29 @@
+@import '../../common/breakpoints.scss';
+@import '../../common/variables.scss';
+
+.home {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 4% 5%;
+  }
+
+  p {
+    max-width: 320px;
+  }
+
+  @include media('<=phone') {
+    flex-direction: column;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 5%;
+    }
+  }
+}

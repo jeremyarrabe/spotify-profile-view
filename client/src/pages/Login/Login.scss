@@ -1,0 +1,23 @@
+@import '../../common/variables.scss';
+@import '../../common/breakpoints.scss';
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__main {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include media('>phone', '<=425px') {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}

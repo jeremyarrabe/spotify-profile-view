@@ -1,0 +1,92 @@
+@import '../../common/breakpoints.scss';
+@import '../../common/variables.scss';
+
+.card {
+  background-color: $ternary-black;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  padding: 1.3rem;
+  margin: 10px;
+
+  &__container {
+    width: auto;
+  }
+
+  &__title {
+    font-size: 0.9rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 140px;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgba($color: #ffffff, $alpha: 0.8);
+    text-transform: capitalize;
+  }
+
+  &__image {
+    height: 150px;
+    width: 150px;
+  }
+
+  @include media('<=phone') {
+    padding: 0rem;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    &__container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+    &__image {
+      height: 75px;
+      width: 75px;
+      margin-right: 1rem;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+  }
+
+  // display: flex;
+  // justify-content: flex-start;
+  // background-color: $secondary-black;
+  // flex-basis: 0px;
+  // border-radius: 0px;
+  // padding: 0px;
+  // margin: 5px 0px 5px 0px;
+  // &__container {
+  //   // No Value
+  //   width: 100%;
+  //   display: flex;
+  //   margin: 0px;
+  //   flex-basis: 0px;
+  //   padding: 2%;
+  //   // border-top: 2px $ternary-black solid;
+  //   border-bottom: 2px $ternary-black solid;
+  // }
+
+  // &__image {
+  //   height: 80px;
+  //   width: 80px;
+  // }
+
+  // &__title {
+  //   font-size: 0.9rem;
+  //   text-overflow: ellipsis;
+  //   overflow: hidden;
+  //   white-space: nowrap;
+  //   max-width: 180px;
+  // }
+
+  // &__details {
+  //   width: 100%;
+  //   height: 100%;
+  //   padding: 0% 2%;
+  // }
+}

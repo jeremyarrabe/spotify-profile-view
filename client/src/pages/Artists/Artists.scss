@@ -1,0 +1,66 @@
+@import '../../common/breakpoints.scss';
+@import '../../common/variables.scss';
+
+.artists {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 4% 5%;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: space-around;
+
+    width: 50%;
+    margin: auto;
+  }
+
+  &__loadmore {
+    border: none;
+    outline: none;
+    background-color: $main-green;
+    padding: 0.5rem 3rem;
+    border-radius: 45px;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    &:hover {
+      background-color: $secondary-green;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-left: 5px;
+    }
+  }
+
+  @include media('<=phone') {
+    flex-direction: column;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 5%;
+    }
+    &__main {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+}

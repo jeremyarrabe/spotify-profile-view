@@ -1,0 +1,33 @@
+@import '../../common/variables.scss';
+@import '../../common/breakpoints.scss';
+.top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  span {
+    font-size: 0.7rem;
+    letter-spacing: 1.8px;
+    color: rgba($color: #ffffff, $alpha: 0.8);
+    font-weight: 700;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include media('<=phone') {
+    margin-top: 10%;
+    &__container {
+      flex-direction: column;
+    }
+  }
+}

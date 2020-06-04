@@ -1,0 +1,39 @@
+@import '../../common/breakpoints.scss';
+@import '../../common/variables.scss';
+
+.button__fill {
+  background-color: $main-green;
+  padding: 1.1rem 3rem;
+  border-radius: 45px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  &:hover {
+    background-color: $secondary-green;
+  }
+
+  @include media('<=phone') {
+    font-size: 0.9rem;
+    padding: 0.9rem 2rem;
+  }
+}
+
+.button__outline {
+  border: 1px $main-white solid;
+  padding: 0.7rem 3rem;
+  border-radius: 45px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  &:hover {
+    background-color: $main-white;
+    color: $main-black;
+  }
+
+  @include media('<=phone') {
+    font-size: 0.9rem;
+    padding: 0.7rem 4rem;
+  }
+}

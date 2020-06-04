@@ -1,0 +1,40 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "The server for spotify-profile-view",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jeremy Arrabe",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "mongoose": "^5.9.15",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.0",
+    "pokedex-promise-v2": "^3.2.0",
+    "qs": "^6.9.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremeheh/spotift-profile-view.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeremeheh/spotift-profile-view/issues"
+  },
+  "homepage": "https://github.com/jeremeheh/spotift-profile-view#readme"
+}

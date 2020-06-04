@@ -1,6 +1,6 @@
 # Spotify Profile View :speech_balloon:
 
-A simple website that uses spotify web api.
+A simple website that uses the spotify web api
 
 ## Getting Started
 

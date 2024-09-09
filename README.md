@@ -4,7 +4,7 @@ A simple website that uses the spotify web api
 
 ## Getting Started
 
-This was made by [jeremeheh](https://github.com/jeremeheh).
+This was made by Jeremy Arrabe
 
 ### This website includes the ff libraries
 
